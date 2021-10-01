@@ -2,7 +2,6 @@ from youtube_search import YoutubeSearch
 from pydub import AudioSegment
 from pygame import mixer as Mi
 from os import remove, rename
-from spotdl import Spotdl
 import glob as G
 import pafy
 
