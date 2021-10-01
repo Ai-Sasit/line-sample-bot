@@ -5,8 +5,8 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage)
 from Functions import *
 
 app = Flask(__name__)
-line_bot_api = LineBotApi(r'your_api')
-handler = WebhookHandler(r'your_webhook')
+line_bot_api = LineBotApi(r'your_channel_access_token')
+handler = WebhookHandler(r'your_channel_secret')
 
 def replyMessage(event,TextMessage):
     line_bot_api.reply_message(event.reply_token,TextSendMessage(text=TextMessage))
