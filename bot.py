@@ -61,7 +61,7 @@ def handle_message(event):
     
     while Mi.music.get_busy() == 1:
         if Mi.music.get_busy() == 0:
-            print("Music is End")
+            print("Music was end!")
             PlayQueue()
         else: continue
     
